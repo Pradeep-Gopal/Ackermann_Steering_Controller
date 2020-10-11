@@ -1,6 +1,6 @@
 # C++ Boilerplate
-[![Build Status](https://travis-ci.org/dpiet/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/dpiet/cpp-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
+[![Build Status](https://travis-ci.com/govindak-umd/Ackermann_Steering_Controller.svg?branch=master)](https://travis-ci.com/govindak-umd/Ackermann_Steering_Controller)
+[![Coverage Status](https://coveralls.io/repos/github/govindak-umd/Ackermann_Steering_Controller/badge.svg?branch=master)](https://coveralls.io/github/govindak-umd/Ackermann_Steering_Controller?branch=master)
 ---
 
 ## Overview
