@@ -1,6 +1,7 @@
 # C++ Boilerplate
 [![Build Status](https://travis-ci.com/govindak-umd/Ackermann_Steering_Controller.svg?branch=master)](https://travis-ci.com/govindak-umd/Ackermann_Steering_Controller)
 [![Coverage Status](https://coveralls.io/repos/github/govindak-umd/Ackermann_Steering_Controller/badge.svg?branch=master)](https://coveralls.io/github/govindak-umd/Ackermann_Steering_Controller?branch=master)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ---
 
 ## Overview
