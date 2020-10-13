@@ -11,7 +11,7 @@ private:
 	double outer_wheel_velocity;
 public:
 	// Robot(){};
-	void drive(double,double){};
-}
+	void drive(double ,double);
+};
 
 
