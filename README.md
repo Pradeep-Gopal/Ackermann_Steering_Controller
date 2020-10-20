@@ -40,13 +40,13 @@ This project was completed using AIP with the involvement of 3 programmers using
 
 The Proposed Control system
 <p align="center">
-  <img width="1000" height="500" src="images/controller_block_diagram.jpeg">
+  <img  height="500" src="images/controller_block_diagram.jpeg">
 </p>
 
 Ackermann Steering
 
 <p align="center">
-  <img width="500" height="500" src="images/ackermann_steering.jpeg">
+  <img height="500" src="images/ackermann_steering.jpeg">
 </p>
 
 ## To-do tasks for pair programming (Driver-Navigator-Design Keeper discussion)
