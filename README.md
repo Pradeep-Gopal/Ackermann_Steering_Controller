@@ -36,7 +36,7 @@ This project was completed using AIP with the involvement of 3 programmers using
 ## Important Links
 [Google Doc Link for Sprint Planning and notes](https://docs.google.com/document/d/1MYrVPlC8CS4HKTRGY48tLDCI4FuRGh4HkhqQqH0sPOc/edit?usp=sharing)
 
-[ Youtube link to the video discussion](https://youtu.be/VMbhLwmguhI)
+[ Youtube link to the video discussion](https://youtu.be/a_8yBz6tatk)
 
 The Proposed Control system
 <p align="center">
