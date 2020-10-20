@@ -9,3 +9,6 @@ build/
 
 # Python
 *.pyc
+
+# Visual Studio Files
+.vscode/

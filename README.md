@@ -31,10 +31,10 @@ The following assumptions are made while developing this project :-
  ## Agile Iterative Process (AIP)
 This project was completed using AIP with the involvement of 3 programmers using Pair-programming in turns. The detailed Product Backlog, Iteration Backlogs and Work Log are mentioned in the link given below :
 
+[Agile Iterative Process](https://docs.google.com/spreadsheets/d/1mllm-lFvLnS9uENkift7FDs6RVxYKf9B1DdrZmD5e4E/edit#gid=0)
+
 ## Important Links
 [Google Doc Link for Sprint Planning and notes](https://docs.google.com/document/d/1MYrVPlC8CS4HKTRGY48tLDCI4FuRGh4HkhqQqH0sPOc/edit?usp=sharing)
-
-[Agile Iterative Process](https://docs.google.com/spreadsheets/d/1mllm-lFvLnS9uENkift7FDs6RVxYKf9B1DdrZmD5e4E/edit#gid=0)
 
 [ Youtube link to the video discussion](https://youtu.be/VMbhLwmguhI)
 
