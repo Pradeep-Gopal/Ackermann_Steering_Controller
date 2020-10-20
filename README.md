@@ -29,8 +29,9 @@ The following assumptions are made while developing this project :-
  6. The maximum steering angle is 45 degrees.
  
  ## Agile Iterative Process (AIP)
-This project was completed using AIP with the involvement of 3 programmers using Pair-programming in turns. The detailed Product Backlog, Iteration Backlogs and Work Log are mentioned in the link given below : 
-https://docs.google.com/spreadsheets/d/1mllm-lFvLnS9uENkift7FDs6RVxYKf9B1DdrZmD5e4E/edit?usp=sharing
+This project was completed using AIP with the involvement of 3 programmers using Pair-programming in turns. The detailed Product Backlog, Iteration Backlogs and Work Log are mentioned in the link given below :
+
+[Google doc link for sprint planning and notes ](https://docs.google.com/spreadsheets/d/1mllm-lFvLnS9uENkift7FDs6RVxYKf9B1DdrZmD5e4E/edit?usp=sharing)
 
 ## Important Links
 [Google Doc Link for Sprint Planning and notes](https://docs.google.com/document/d/1MYrVPlC8CS4HKTRGY48tLDCI4FuRGh4HkhqQqH0sPOc/edit?usp=sharing)
