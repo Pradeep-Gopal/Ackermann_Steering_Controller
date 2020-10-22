@@ -8,7 +8,5 @@
  */
 int main()
 {
-    Robot myrobot;
-    myrobot.drive(1,0.2);
     return 0;
 }
