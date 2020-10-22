@@ -1,8 +1,11 @@
 #include <iostream>
-#include <lib.hpp>
 
+/**
+ * @brief      The main function calls tha analysis class and runs the convergence
+ *
+ * @return     0
+ */
 int main()
 {
-    dummy();
     return 0;
 }
