@@ -3,19 +3,19 @@
 
 /**
  * @brief      This class describes an user interface to input the desired
- * 				velocity and the heading
+ * 				speed and the heading
  */	
 class UserInterface{
 private:
-	double target_velocity;//target velocity wished by the user for the robot
+	double target_speed;//target speed wished by the user for the robot
 	double target_heading;//target heading wished by the user for the robot
 public:
 	// UserInterface(){};
 	/**
- * @brief      Gets the targets from the user
+ * @brief      Gets the targets from the user and stores them in the corresponding attributes
  
- * @return     Outputs the targets as a vector of doubles
+ * @return     None
  */
-	std::vector<double> getTargets();
+	void getTargets();
 };
 

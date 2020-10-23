@@ -29,4 +29,5 @@ double Controller::computeThrottle(double throttle,double steering_angle){
  * @param[in]  heading  The heading
  */
 void Controller::computeError(double speed, double heading){
+    
 }
