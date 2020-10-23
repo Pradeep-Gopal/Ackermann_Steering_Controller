@@ -1,9 +1,12 @@
 #pragma once
-#include<vector>
+#include <vector>
+#include "userinterface.hpp"
 /**
  * @brief      Class that comprises of the two 
  * 				PID Controllers for speed and heading.
  */
+
+
 class Controller{
 private:
 	double max_steering_angle;// maximum steering angle of the vehicle for turn
@@ -16,33 +19,41 @@ private:
 	double k_d_s;//Derivative error constant for Speed
 	std::vector<double> heading_error;//Vector holding the heading error
 	std::vector<double> speed_error;//Vector holding the Speed error
+	double target_speed;//target speed wished by the user for the robot
+	double target_heading;//target heading wished by the user for the robot
+	double dt = .1; //tick rate for the controller
 public:
 	// Controller(){};
+
 	/**
- * @brief      Calculates the steering angle
- *
- * @param[in]  throttle        The throttle
- * @param[in]  steering_angle  The steering angle
- *
- * @return     The steering
- */
-	double computeSteering(double ,double);
+	 * @brief      Sets the targets.
+	 *
+	 * @param[in]  th target heading
+	 * @param[in]  ts target speed
+	*/
+	void setTargets(double,double);
+	
 	/**
- * @brief      Calculates the new throttle angle.
- *
- * @param[in]  throttle        The throttle given by the user to the vehicle
- * @param[in]  steering_angle  The steering angle for direction change
- *
- * @return     The throttle as a normalized value
- */
-	double computeThrottle(double, double);
+	 * @brief      Calculates the steering angle
+	 *
+	 * @return     The steering
+	 */
+	double computeSteering();
+	
 	/**
- * @brief      Calculates the totla speed and heading error and updates
- * 				in the private variables
- *
- * @param[in]  speed    The speed
- * @param[in]  heading  The heading
- */
+	 * @brief      Calculates the new throttle angle.
+	 *
+	 * @return     The throttle as a normalized value
+	 */
+	double computeThrottle();
+	
+	/**
+	 * @brief      Calculates the totla speed and heading error and updates
+	 * 				in the private variables
+	 *
+	 * @param[in]  speed    The speed
+	 * @param[in]  heading  The heading
+	 */
 	void computeError(double, double);
 };
 

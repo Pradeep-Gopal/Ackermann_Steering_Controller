@@ -7,8 +7,8 @@
  */	
 class UserInterface{
 private:
-	double target_speed;//target speed wished by the user for the robot
-	double target_heading;//target heading wished by the user for the robot
+	double target_speed = 0;//target speed wished by the user for the robot
+	double target_heading = 0;//target heading wished by the user for the robot
 public:
 	// UserInterface(){};
 /**
@@ -24,7 +24,7 @@ public:
  * @return     The target speed.
  */
     double getTargetSpeed();
-    
+
 /**
  * @brief      Gets the target heading.
  *
