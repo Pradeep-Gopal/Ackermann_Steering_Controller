@@ -18,3 +18,23 @@ void  UserInterface::getTargets(){
 
     // std::cout << target_heading << " " << target_speed << std::endl;
 }
+
+/**
+ * @brief      Gets the target speed.
+ *
+ * @return     The target speed.
+ */
+double UserInterface::getTargetSpeed(){
+    return target_speed;
+}
+
+/**
+ * @brief      Gets the target heading.
+ *
+ * @return     The target heading.
+ */
+double UserInterface::getTargetHeading(){
+    return target_heading;
+}
+
+
