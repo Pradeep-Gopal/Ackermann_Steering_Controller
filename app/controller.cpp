@@ -51,16 +51,20 @@ double Controller::computeThrottle(){
 }
 
 /**
- * @brief      Calculates the totla speed and heading error and updates
- * 				in the private variables
+ * @brief      Calculates the speed and heading error and updates
+ *              in the private variables
  *
  * @param[in]  speed    The speed
  * @param[in]  heading  The heading
+ *
+ * @return     The error as a tuple 
  */
-void Controller::computeError(double speed, double heading){
+std::tuple<double,double> Controller::computeError(double speed, double heading){
     double cur_speed_error = target_speed - speed;
     double cur_heading_error = target_heading - heading;
 
     speed_error.push_back(cur_speed_error);
     heading_error.push_back(cur_heading_error);
+
+    return std::make_tuple(cur_speed_error,cur_heading_error);
 }

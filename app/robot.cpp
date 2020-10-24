@@ -36,9 +36,18 @@ void Robot::drive(double throttle,double steering_angle){
     // std::cout << "inner_wheel_velocity: " << inner_wheel_velocity << std::endl;
     // std::cout << "outer_wheel_velocity: " << outer_wheel_velocity << std::endl;
 
-    robot_speed = (R*delta_theta)/dt;
-    robot_heading += delta_theta;
+    speed = (R*delta_theta)/dt;
+    heading += delta_theta;
 
     // std::cout << "robot_speed: " << robot_speed << std::endl;
     // std::cout << "robot_heading: " << robot_heading << std::endl;
 }
+
+double Robot::getSpeed(){
+    return speed;
+}
+
+double Robot::getHeading(){
+    return heading;
+}
+

@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include <tuple>
 #include "userinterface.hpp"
 /**
  * @brief      Class that comprises of the two 
@@ -9,14 +10,14 @@
 
 class Controller{
 private:
-	double max_steering_angle;// maximum steering angle of the vehicle for turn
+	double max_steering_angle = 0.785398;// maximum steering angle of the vehicle for turn (45 deg)
 	double max_throttle;// max_throttle as a normalized value
-	double k_p_theta;//Proportional error constant for Theta
-	double k_i_theta;//Integral error constant for Theta
-	double k_d_theta;//Derivative error constant for Theta
-	double k_p_s;//Proportional error constant for Speed
-	double k_i_s;//Integral error constant for Speed
-	double k_d_s;//Derivative error constant for Speed
+	double k_p_theta = 1;//Proportional error constant for Theta
+	double k_i_theta = 1;//Integral error constant for Theta
+	double k_d_theta = 1;//Derivative error constant for Theta
+	double k_p_s = 1;//Proportional error constant for Speed
+	double k_i_s = 1;//Integral error constant for Speed
+	double k_d_s = 1;//Derivative error constant for Speed
 	std::vector<double> heading_error;//Vector holding the heading error
 	std::vector<double> speed_error;//Vector holding the Speed error
 	double target_speed;//target speed wished by the user for the robot
@@ -48,12 +49,14 @@ public:
 	double computeThrottle();
 	
 	/**
-	 * @brief      Calculates the totla speed and heading error and updates
-	 * 				in the private variables
+	 * @brief      Calculates the speed and heading error and updates
+	 *              in the private variables
 	 *
 	 * @param[in]  speed    The speed
 	 * @param[in]  heading  The heading
+	 *
+	 * @return     The error as a tuple 
 	 */
-	void computeError(double, double);
+	std::tuple<double,double> computeError(double, double);
 };
 
