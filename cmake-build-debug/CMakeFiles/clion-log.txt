@@ -1,4 +1,0 @@
-/snap/clion/129/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/justin/ENPM808X/Ackermann_Steering_Controller
--- Configuring done
--- Generating done
--- Build files have been written to: /home/justin/ENPM808X/Ackermann_Steering_Controller/cmake-build-debug
