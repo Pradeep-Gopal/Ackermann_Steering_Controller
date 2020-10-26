@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -Wpedantic -g -g  -rdynamic CMakeFiles/shell-app.dir/main.cpp.o CMakeFiles/shell-app.dir/robot.cpp.o CMakeFiles/shell-app.dir/controller.cpp.o CMakeFiles/shell-app.dir/userinterface.cpp.o CMakeFiles/shell-app.dir/visualization.cpp.o CMakeFiles/shell-app.dir/analysis.cpp.o  -o shell-app 

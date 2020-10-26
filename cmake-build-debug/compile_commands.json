@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/home/justin/ENPM808X/Ackermann_Steering_Controller/cmake-build-debug/app",
+  "command": "/usr/bin/c++   -I/home/justin/ENPM808X/Ackermann_Steering_Controller/include  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/shell-app.dir/main.cpp.o -c /home/justin/ENPM808X/Ackermann_Steering_Controller/app/main.cpp",
+  "file": "/home/justin/ENPM808X/Ackermann_Steering_Controller/app/main.cpp"
+},
+{
+  "directory": "/home/justin/ENPM808X/Ackermann_Steering_Controller/cmake-build-debug/app",
+  "command": "/usr/bin/c++   -I/home/justin/ENPM808X/Ackermann_Steering_Controller/include  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/shell-app.dir/robot.cpp.o -c /home/justin/ENPM808X/Ackermann_Steering_Controller/app/robot.cpp",
+  "file": "/home/justin/ENPM808X/Ackermann_Steering_Controller/app/robot.cpp"
+},
+{
+  "directory": "/home/justin/ENPM808X/Ackermann_Steering_Controller/cmake-build-debug/app",
+  "command": "/usr/bin/c++   -I/home/justin/ENPM808X/Ackermann_Steering_Controller/include  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/shell-app.dir/controller.cpp.o -c /home/justin/ENPM808X/Ackermann_Steering_Controller/app/controller.cpp",
+  "file": "/home/justin/ENPM808X/Ackermann_Steering_Controller/app/controller.cpp"
+},
+{
+  "directory": "/home/justin/ENPM808X/Ackermann_Steering_Controller/cmake-build-debug/app",
+  "command": "/usr/bin/c++   -I/home/justin/ENPM808X/Ackermann_Steering_Controller/include  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/shell-app.dir/userinterface.cpp.o -c /home/justin/ENPM808X/Ackermann_Steering_Controller/app/userinterface.cpp",
+  "file": "/home/justin/ENPM808X/Ackermann_Steering_Controller/app/userinterface.cpp"
+},
+{
+  "directory": "/home/justin/ENPM808X/Ackermann_Steering_Controller/cmake-build-debug/app",
+  "command": "/usr/bin/c++   -I/home/justin/ENPM808X/Ackermann_Steering_Controller/include  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/shell-app.dir/visualization.cpp.o -c /home/justin/ENPM808X/Ackermann_Steering_Controller/app/visualization.cpp",
+  "file": "/home/justin/ENPM808X/Ackermann_Steering_Controller/app/visualization.cpp"
+},
+{
+  "directory": "/home/justin/ENPM808X/Ackermann_Steering_Controller/cmake-build-debug/app",
+  "command": "/usr/bin/c++   -I/home/justin/ENPM808X/Ackermann_Steering_Controller/include  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/shell-app.dir/analysis.cpp.o -c /home/justin/ENPM808X/Ackermann_Steering_Controller/app/analysis.cpp",
+  "file": "/home/justin/ENPM808X/Ackermann_Steering_Controller/app/analysis.cpp"
+},
+{
+  "directory": "/home/justin/ENPM808X/Ackermann_Steering_Controller/cmake-build-debug/test",
+  "command": "/usr/bin/c++   -I/home/justin/ENPM808X/Ackermann_Steering_Controller/test/../vendor/googletest/googletest/include -I/home/justin/ENPM808X/Ackermann_Steering_Controller/include -I/home/justin/ENPM808X/Ackermann_Steering_Controller/vendor/googletest/googletest/include  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/cpp-test.dir/main.cpp.o -c /home/justin/ENPM808X/Ackermann_Steering_Controller/test/main.cpp",
+  "file": "/home/justin/ENPM808X/Ackermann_Steering_Controller/test/main.cpp"
+},
+{
+  "directory": "/home/justin/ENPM808X/Ackermann_Steering_Controller/cmake-build-debug/test",
+  "command": "/usr/bin/c++   -I/home/justin/ENPM808X/Ackermann_Steering_Controller/test/../vendor/googletest/googletest/include -I/home/justin/ENPM808X/Ackermann_Steering_Controller/include -I/home/justin/ENPM808X/Ackermann_Steering_Controller/vendor/googletest/googletest/include  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/cpp-test.dir/test.cpp.o -c /home/justin/ENPM808X/Ackermann_Steering_Controller/test/test.cpp",
+  "file": "/home/justin/ENPM808X/Ackermann_Steering_Controller/test/test.cpp"
+},
+{
+  "directory": "/home/justin/ENPM808X/Ackermann_Steering_Controller/cmake-build-debug/test",
+  "command": "/usr/bin/c++   -I/home/justin/ENPM808X/Ackermann_Steering_Controller/test/../vendor/googletest/googletest/include -I/home/justin/ENPM808X/Ackermann_Steering_Controller/include -I/home/justin/ENPM808X/Ackermann_Steering_Controller/vendor/googletest/googletest/include  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/cpp-test.dir/controller_test.cpp.o -c /home/justin/ENPM808X/Ackermann_Steering_Controller/test/controller_test.cpp",
+  "file": "/home/justin/ENPM808X/Ackermann_Steering_Controller/test/controller_test.cpp"
+},
+{
+  "directory": "/home/justin/ENPM808X/Ackermann_Steering_Controller/cmake-build-debug/test",
+  "command": "/usr/bin/c++   -I/home/justin/ENPM808X/Ackermann_Steering_Controller/test/../vendor/googletest/googletest/include -I/home/justin/ENPM808X/Ackermann_Steering_Controller/include -I/home/justin/ENPM808X/Ackermann_Steering_Controller/vendor/googletest/googletest/include  -Wall -Wextra -Wpedantic -g -g   -std=gnu++14 -o CMakeFiles/cpp-test.dir/__/app/controller.cpp.o -c /home/justin/ENPM808X/Ackermann_Steering_Controller/app/controller.cpp",
+  "file": "/home/justin/ENPM808X/Ackermann_Steering_Controller/app/controller.cpp"
+},
+{
+  "directory": "/home/justin/ENPM808X/Ackermann_Steering_Controller/cmake-build-debug/vendor/googletest/googletest",
+  "command": "/usr/bin/c++   -I/home/justin/ENPM808X/Ackermann_Steering_Controller/vendor/googletest/googletest/include -I/home/justin/ENPM808X/Ackermann_Steering_Controller/vendor/googletest/googletest  -Wall -Wextra -Wpedantic -g -g   -Wall -Wextra -Wpedantic -g -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=gnu++14 -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/justin/ENPM808X/Ackermann_Steering_Controller/vendor/googletest/googletest/src/gtest_main.cc",
+  "file": "/home/justin/ENPM808X/Ackermann_Steering_Controller/vendor/googletest/googletest/src/gtest_main.cc"
+},
+{
+  "directory": "/home/justin/ENPM808X/Ackermann_Steering_Controller/cmake-build-debug/vendor/googletest/googletest",
+  "command": "/usr/bin/c++   -I/home/justin/ENPM808X/Ackermann_Steering_Controller/vendor/googletest/googletest/include -I/home/justin/ENPM808X/Ackermann_Steering_Controller/vendor/googletest/googletest  -Wall -Wextra -Wpedantic -g -g   -Wall -Wextra -Wpedantic -g -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=gnu++14 -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/justin/ENPM808X/Ackermann_Steering_Controller/vendor/googletest/googletest/src/gtest-all.cc",
+  "file": "/home/justin/ENPM808X/Ackermann_Steering_Controller/vendor/googletest/googletest/src/gtest-all.cc"
+}
+]
