@@ -12,38 +12,34 @@ void Analysis::converge(){
 
     UserInterface ui;
     Visualization viz;
-    ui.getTargetsFromUser();
+//    ui.getTargetsFromUser();
 
     Controller cont;
-    cont.setTargets(ui.getTargetSpeed(),ui.getTargetHeading());
+    cont.setTargets(10,10);
+    cont.computeError(5,5);
 
-    Robot robot;
+    std::cout << "Throttle: " << cont.computeThrottle() << std::endl;
 
-    double throttle;
-    double steering_angle;
-
-    std::tuple<double,double> errors;
+//    Robot robot;
+//
+//    double throttle;
+//    double steering_angle;
+//
+//    std::tuple<double,double> errors;
 
 //    while (true){
-    errors = cont.computeError(robot.getSpeed(),robot.getHeading());
-
-    throttle = cont.computeThrottle();
-    steering_angle = cont.computeSteering();
-
+//        errors = cont.computeError(robot.getSpeed(),robot.getHeading());
+//
+//        throttle = cont.computeThrottle();
+//        steering_angle = cont.computeSteering();
 //        robot.drive(throttle,steering_angle);
-    auto values = robot.drive(1,0.524);
-
-    std::cout << "Speed: " << values[0] << std::endl;
-    std::cout << "Heading: " << values[1] << std::endl;
-    std::cout << "IWV: " << values[2] << std::endl;
-    std::cout << "OWV: " << values[3] << std::endl;
 
 
 //        if ((std::get<0>(errors) <= speed_thresh) && (std::get<1>(errors) <= heading_thresh)){
 //            break;
 //        }
 
-    viz.show(robot.getSpeed(),robot.getHeading(), ui);
+//    viz.show(robot.getSpeed(),robot.getHeading(), ui);
 //    }
 	
 }

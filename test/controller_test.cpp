@@ -9,4 +9,22 @@ TEST(Controller_Test1,ComputeErrorTest){
     EXPECT_EQ(controller.computeError(5,5),std::make_tuple(5,5));
 }
 
+TEST(Controller_Test2,ComputeSteeringTest){
+    Controller controller;
+
+    controller.setTargets(10,10);
+    controller.computeError(5,5);
+
+    EXPECT_EQ(controller.computeSteering(),0.5);
+}
+
+TEST(Controller_Test3,ComputeThrottleTest){
+    Controller controller;
+
+    controller.setTargets(10,10);
+    controller.computeError(5,5);
+
+    EXPECT_EQ(controller.computeThrottle(),0.5);
+}
+
 
