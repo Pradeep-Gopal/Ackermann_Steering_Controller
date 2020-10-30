@@ -1,4 +1,5 @@
 #pragma once
+#include <vector>
 
 /**
  * @brief      This the Plant for the controller, which is the vehicle.
@@ -21,7 +22,7 @@ public:
 	 * @param[in]  throttle        The throttle
 	 * @param[in]  steering_angle  The steering angle
 	 */
-	void drive(double ,double);
+    std::vector<double> drive(double ,double);
 	
 	/**
 	 * @brief      Gets the robot speed.

@@ -5,7 +5,9 @@ add_executable(
     main.cpp
     test.cpp
     controller_test.cpp
+    robot_test.cpp
     ../app/controller.cpp
+    ../app/robot.cpp
 )
 
 target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include 
