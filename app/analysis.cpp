@@ -12,7 +12,7 @@ void Analysis::converge(){
 
     UserInterface ui;
     Visualization viz;
-    ui.getTargets();
+    ui.getTargetsFromUser();
 
     Controller cont;
     cont.setTargets(ui.getTargetSpeed(),ui.getTargetHeading());

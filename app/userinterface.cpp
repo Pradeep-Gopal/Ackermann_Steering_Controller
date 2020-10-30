@@ -8,7 +8,7 @@
  
  * @return     None
  */
-void  UserInterface::getTargets(){
+void  UserInterface::getTargetsFromUser() {
     std::cout << "Enter the target heading (in degrees): ";
     double target_heading_deg;
     std::cin >> target_heading_deg;

@@ -16,7 +16,7 @@ public:
  
  * @return     None
  */
-	void getTargets();
+	void getTargetsFromUser();
 
 /**
  * @brief      Gets the target speed.
