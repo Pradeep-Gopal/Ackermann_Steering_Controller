@@ -1,6 +1,13 @@
 #include <controller.hpp>
-#include <numeric>
 
+/**
+ * @brief User Defined Constructor
+ *
+ * @param robot
+ */
+Controller::Controller(Robot &robot) {
+    max_throttle = robot.getAlpha_Wheel_Max()*dt;
+}
 
 /**
  * @brief      Sets the targets.
@@ -23,13 +30,24 @@ void Controller::setTargets(double ts,double th){
  * @return     The steering
  */
 double Controller::computeSteering(){
-    double prop_gain = k_p_theta * heading_error[-1];
-    double int_gain = k_i_theta * (std::accumulate(heading_error.begin(), heading_error.end(),0)*dt*heading_error.size());
-    double deriv_gain = k_d_theta * ((heading_error[-1]-heading_error[-2])/dt);
+    double p_gain = k_p_theta * heading_error[-1];
+    double sum = 0;
+    for (auto err: heading_error) {
+        sum += err * dt;
+    }
+    double i_gain = k_i_theta * sum;
 
-    double gain = prop_gain+int_gain+deriv_gain;
+    double d_gain = k_d_theta * ((heading_error[-1]-heading_error[-2])/dt);
 
-    return gain;
+    double gamma = p_gain+i_gain+d_gain;
+
+    if (gamma > max_steering_angle) {
+        gamma = max_steering_angle;
+    } else if (gamma < -max_steering_angle){
+        gamma = -max_steering_angle;
+    }
+
+    return gamma;
 }
 
 /**
@@ -41,13 +59,24 @@ double Controller::computeSteering(){
  * @return     The throttle as a normalized value
  */
 double Controller::computeThrottle(){
-    double prop_gain = k_p_theta * speed_error[-1];
-    double int_gain = k_i_theta * (std::accumulate(speed_error.begin(), speed_error.end(),0)*dt*speed_error.size());
-    double deriv_gain = k_d_theta * ((speed_error[-1]-speed_error[-2])/dt);
+    double p_gain = k_p_theta * speed_error[-1];
+    double sum = 0;
+    for (auto err: speed_error) {
+        sum += err * dt;
+    }
+    double i_gain = k_i_theta * sum;
 
-    double gain = prop_gain+int_gain+deriv_gain;
+    double d_gain = k_d_theta * ((speed_error[-1]-speed_error[-2])/dt);
 
-    return gain;
+    double throttle = p_gain+i_gain+d_gain;
+
+    if (throttle > max_throttle) {
+        throttle = max_throttle;
+    } else if (throttle < -max_throttle){
+        throttle = -max_throttle;
+    }
+
+    return throttle;
 }
 
 /**
@@ -67,4 +96,8 @@ std::tuple<double,double> Controller::computeError(double speed, double heading)
     heading_error.push_back(cur_heading_error);
 
     return std::make_tuple(cur_speed_error,cur_heading_error);
+}
+
+double Controller::getDt() {
+    return dt;
 }

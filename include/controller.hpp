@@ -2,11 +2,11 @@
 #include <vector>
 #include <tuple>
 #include "userinterface.hpp"
+#include "robot.hpp"
 /**
  * @brief      Class that comprises of the two 
  * 				PID Controllers for speed and heading.
  */
-
 
 class Controller{
 private:
@@ -20,11 +20,12 @@ private:
 	double k_d_s = 1;//Derivative error constant for Speed
 	std::vector<double> heading_error;//Vector holding the heading error
 	std::vector<double> speed_error;//Vector holding the Speed error
-	double target_speed;//target speed wished by the user for the robot
-	double target_heading;//target heading wished by the user for the robot
+	double target_speed = 0;//target speed wished by the user for the robot
+	double target_heading = 0;//target heading wished by the user for the robot
 	double dt = .1; //tick rate for the controller
 public:
-	// Controller(){};
+	 explicit Controller(Robot& robot);
+//	 Controller() = delete;
 
 	/**
 	 * @brief      Sets the targets.
@@ -58,5 +59,11 @@ public:
 	 * @return     The error as a tuple 
 	 */
 	std::tuple<double,double> computeError(double, double);
+
+	/**
+	 *
+	 * @return
+	 */
+	double getDt();
 };
 

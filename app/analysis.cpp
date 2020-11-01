@@ -12,34 +12,34 @@ void Analysis::converge(){
 
     UserInterface ui;
     Visualization viz;
-//    ui.getTargetsFromUser();
+    ui.getTargetsFromUser();
 
-    Controller cont;
-    cont.setTargets(10,10);
-    cont.computeError(5,5);
+    Robot robot;
+    Controller cont = Controller(robot);
 
-    std::cout << "Throttle: " << cont.computeThrottle() << std::endl;
+    cont.setTargets(ui.getTargetSpeed(),ui.getTargetHeading());
 
-//    Robot robot;
-//
-//    double throttle;
-//    double steering_angle;
-//
-//    std::tuple<double,double> errors;
+    double throttle;
+    double steering_angle;
 
-//    while (true){
-//        errors = cont.computeError(robot.getSpeed(),robot.getHeading());
-//
-//        throttle = cont.computeThrottle();
-//        steering_angle = cont.computeSteering();
-//        robot.drive(throttle,steering_angle);
+    std::tuple<double,double> errors;
 
+    while (true){
+        errors = cont.computeError(robot.getSpeed(),robot.getHeading());
 
-//        if ((std::get<0>(errors) <= speed_thresh) && (std::get<1>(errors) <= heading_thresh)){
-//            break;
-//        }
+        throttle = cont.computeThrottle();
+        steering_angle = cont.computeSteering();
 
-//    viz.show(robot.getSpeed(),robot.getHeading(), ui);
-//    }
+        std::cout << "Throttle: " << throttle << std::endl;
+        std::cout << "Gamma: " << steering_angle << std::endl;
+
+        robot.drive(throttle,steering_angle,cont.getDt());
+
+        if ((std::get<0>(errors) <= speed_thresh) && (std::get<1>(errors) <= heading_thresh)){
+            break;
+        }
+
+    viz.show(robot.getSpeed(),robot.getHeading(), ui);
+    }
 	
 }

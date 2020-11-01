@@ -1,8 +1,10 @@
 #include <gtest/gtest.h>
 #include <controller.hpp>
+#include <robot.hpp>
 
 TEST(Controller_Test1,ComputeErrorTest){
-    Controller controller;
+    Robot robot;
+    Controller controller(robot);
 
     controller.setTargets(10,10);
 
@@ -10,7 +12,8 @@ TEST(Controller_Test1,ComputeErrorTest){
 }
 
 TEST(Controller_Test2,ComputeSteeringTest){
-    Controller controller;
+    Robot robot;
+    Controller controller(robot);
 
     controller.setTargets(10,10);
     controller.computeError(5,5);
@@ -19,7 +22,8 @@ TEST(Controller_Test2,ComputeSteeringTest){
 }
 
 TEST(Controller_Test3,ComputeThrottleTest){
-    Controller controller;
+    Robot robot;
+    Controller controller(robot);
 
     controller.setTargets(10,10);
     controller.computeError(5,5);

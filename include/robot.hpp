@@ -14,6 +14,7 @@ private:
 	double inner_wheel_velocity = 0;//inner wheel's velocity
 	double outer_wheel_velocity = 0;//outer wheel's velocity
 	double com_offset = 1;//Complete offset
+	double alpha_wheel_max = 8; //Maximum acceleration of the wheel in rad/s^2
 public:
 	// Robot(){};
 	/**
@@ -21,8 +22,9 @@ public:
 	 *
 	 * @param[in]  throttle        The throttle
 	 * @param[in]  steering_angle  The steering angle
+	 * @param[in]  t              The amount of time to drive
 	 */
-    std::vector<double> drive(double ,double);
+    std::vector<double> drive(double ,double, double);
 	
 	/**
 	 * @brief      Gets the robot speed.
@@ -37,6 +39,8 @@ public:
 	 * @return     The robot heading.
 	 */
 	double getHeading();
+
+	double getAlpha_Wheel_Max();
 
 };
 
