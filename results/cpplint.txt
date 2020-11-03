@@ -1,1 +1,25 @@
-command: cpplint $( find . -name \.hpp -or -name \.cpp | grep -vE -e "^./build/" -e "^./vendor/" -e "^./docs/" -e "^./results" )
+Command used:
+
+cppcheck --enable=all --std=c++11 -I include/ --suppress=missingIncludeSystem $( find . -name *.cpp | grep -vE -e "^./build/" -e "^./vendor/" )
+
+Results:
+
+Done processing ./app/analysis.cpp
+Done processing ./app/controller.cpp
+Done processing ./app/main.cpp
+Done processing ./app/robot.cpp
+Done processing ./app/userinterface.cpp
+Done processing ./app/visualization.cpp
+Done processing ./include/analysis.hpp
+./include/controller.hpp:31:  Is this a non-const reference? If so, make const or use a pointer: Robot& robot  [runtime/references] [2]
+Done processing ./include/controller.hpp
+Done processing ./include/robot.hpp
+Done processing ./include/userinterface.hpp
+Done processing ./include/visualization.hpp
+Done processing ./test/controller_test.cpp
+Done processing ./test/main.cpp
+Done processing ./test/robot_test.cpp
+Done processing ./test/userinterface_test.cpp
+Total errors found: 1
+
+

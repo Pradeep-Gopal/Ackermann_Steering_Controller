@@ -1,25 +1,26 @@
-command: cppcheck --enable=all --std=c++11 -I include/ --suppress=missingIncludeSystem $( find . -name *.cpp | grep -vE -e "^./build/" -e "^./vendor/" -e "^./src/")
+Command Used: 
 
-results:
+cppcheck --enable=all --std=c++11 -I include/ --suppress=missingIncludeSystem $( find . -name *.cpp | grep -vE -e "^./build/" -e "^./vendor/" )
+
+Results:
+
 Checking app/analysis.cpp ...
-1/11 files checked 10% done
+1/10 files checked 10% done
 Checking app/controller.cpp ...
-2/11 files checked 36% done
+2/10 files checked 35% done
 Checking app/main.cpp ...
-3/11 files checked 38% done
+3/10 files checked 37% done
 Checking app/robot.cpp ...
-4/11 files checked 67% done
+4/10 files checked 65% done
 Checking app/userinterface.cpp ...
-5/11 files checked 76% done
+5/10 files checked 74% done
 Checking app/visualization.cpp ...
-6/11 files checked 83% done
+6/10 files checked 82% done
 Checking test/controller_test.cpp ...
-7/11 files checked 90% done
+7/10 files checked 89% done
 Checking test/main.cpp ...
-8/11 files checked 91% done
+8/10 files checked 91% done
 Checking test/robot_test.cpp ...
-9/11 files checked 96% done
-Checking test/test.cpp ...
-10/11 files checked 97% done
+9/10 files checked 97% done
 Checking test/userinterface_test.cpp ...
-11/11 files checked 100% done
+10/10 files checked 100% done
