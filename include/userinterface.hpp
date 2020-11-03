@@ -23,14 +23,14 @@ public:
  *
  * @return     The target speed.
  */
-    double getTargetSpeed();
+    double getTargetSpeed() const;
 
 /**
  * @brief      Gets the target heading.
  *
  * @return     The target heading.
  */
-    double getTargetHeading();
+    double getTargetHeading() const;
 
 };
 

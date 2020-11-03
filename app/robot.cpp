@@ -29,7 +29,7 @@ std::vector<double> Robot::drive(double throttle,double steering_angle, double t
             std::cout << "Not a valid steering angle" << std::endl;
 
         case 'L':
-            std::cout << "Turning left" << std::endl;
+//            std::cout << "Turning left" << std::endl;
             R = sqrt(pow(com_offset, 2) + (pow(wheel_base, 2) * pow((1 / tan(steering_angle)), 2)));
             R1 = sqrt(pow(R, 2) - pow(com_offset, 2));
             left_wheel_angle = atan(wheel_base / (R1 - (wheel_track / 2)));
@@ -40,7 +40,7 @@ std::vector<double> Robot::drive(double throttle,double steering_angle, double t
             new_speed = (R * delta_theta) / t;
             break;
         case 'R':
-            std::cout << "Turning right" << std::endl;
+//            std::cout << "Turning right" << std::endl;
             R = sqrt(pow(com_offset, 2) + (pow(wheel_base, 2) * pow((1 / tan(-steering_angle)), 2)));
             R1 = sqrt(pow(R, 2) - pow(com_offset, 2));
             right_wheel_angle = atan(wheel_base / (R1 - (wheel_track / 2)));
@@ -51,7 +51,7 @@ std::vector<double> Robot::drive(double throttle,double steering_angle, double t
             new_speed = (R * delta_theta) / t;
             break;
         case 'S':
-            std::cout << "Going straight" << std::endl;
+//            std::cout << "Going straight" << std::endl;
             right_wheel_angle = 0;
             left_wheel_angle = 0;
             if (left_wheel_velocity>=right_wheel_velocity){

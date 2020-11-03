@@ -10,7 +10,7 @@ public:
      */
 	void converge() const;
 private:
-    double speed_thresh = 0.01;
-    double heading_thresh = 0.0174533; // 1 degree
+    double speed_thresh = 0.05;
+    double heading_thresh = 0.03; // ~2 degree
 };
 

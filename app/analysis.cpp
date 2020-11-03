@@ -3,6 +3,7 @@
 #include <userinterface.hpp>
 #include <controller.hpp>
 #include <visualization.hpp>
+#include <iostream>
 
 /**
  * @brief      shows the convergence from set points to the desired points 
@@ -39,7 +40,12 @@ void Analysis::converge() const{
 
         robot_time += dt;
 
+        std::cout << "Throttle: " << throttle << std::endl;
+        std::cout << "Steering Angle: " << steering_angle << std::endl;
         viz.show(robot.getSpeed(),robot.getHeading(), robot_time, ui);
+
+//        if (robot_time > 40)
+//            break;
     }
 	
 }

@@ -13,7 +13,7 @@ void  UserInterface::getTargetsFromUser() {
     double target_heading_deg;
     std::cin >> target_heading_deg;
     if(target_heading_deg < 0)
-        target_heading_deg = 360 - abs(target_heading_deg);
+        target_heading_deg = 360 - std::abs(target_heading_deg);
     target_heading = (target_heading_deg*PI)/180;
     std::cout << "Enter the target speed (in m/s): ";
     std::cin >> target_speed;
@@ -26,7 +26,7 @@ void  UserInterface::getTargetsFromUser() {
  *
  * @return     The target speed.
  */
-double UserInterface::getTargetSpeed(){
+double UserInterface::getTargetSpeed() const{
     return target_speed;
 }
 
@@ -35,7 +35,7 @@ double UserInterface::getTargetSpeed(){
  *
  * @return     The target heading.
  */
-double UserInterface::getTargetHeading(){
+double UserInterface::getTargetHeading() const{
     return target_heading;
 }
 
