@@ -36,7 +36,7 @@ This project was completed using AIP with the involvement of 3 programmers using
 ## Important Links
 [Google Doc Link for Sprint Planning and notes](https://docs.google.com/document/d/1MYrVPlC8CS4HKTRGY48tLDCI4FuRGh4HkhqQqH0sPOc/edit?usp=sharing)
 
-[ Youtube link to the video discussion](https://youtu.be/a_8yBz6tatk)
+[ Youtube link to the video discussion](https://youtu.be/pMxvE9Pz46Y)
 
 The Proposed Control system
 <p align="center">
@@ -56,13 +56,26 @@ Ackermann Steering
 - [x] Update UML diagrams with changes in implementation.
 - [x] Write Unit Test cases for testing and check the test cases to ensure all possible scenarios are covered.
 - [x] Generate Doxygen comments in the code
-- [ ] Develop the code for the project while following C++11 coding guidelines.
-- [ ] Check for design issues in the code
-- [ ] Perform testing and fix defects if any.
-- [ ] Run cpplint and cppcheck as part of Sprint 2.
-- [ ] Run Valgrind to detect memory leaks. Fix all detected memory leaks.
-- [ ] Generate Doxygen documentation in the docs folder.
-- [ ] Make sure that the repository is updated with all delivarables as mentioned in the proposal.
+- [x] Develop the code for the project while following C++11 coding guidelines.
+- [x] Check for design issues in the code
+- [x] Perform testing and fix defects if any.
+- [x] Run cpplint and cppcheck as part of Sprint 2.
+- [x] Run Valgrind to detect memory leaks. Fix all detected memory leaks.
+- [x] Generate Doxygen documentation in the docs folder.
+- [x] Make sure that the repository is updated with all delivarables as mentioned in the proposal.
+
+## How to run the programme
+```
+git clone --recursive https://github.com/Gautam-Balachandran/SoftwareDev-MIDTERM
+cd <path to repository>
+mkdir build
+cd build
+cmake ..
+make
+Run programme: ./app/shell-app
+Enter target heading in degrees
+Enter target speed in m/s
+```
 
 ## Standard install via command-line
 ```
