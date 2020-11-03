@@ -3,7 +3,6 @@ set(GTEST_SHUFFLE 1)
 add_executable(
     cpp-test
     main.cpp
-    test.cpp
     controller_test.cpp
     robot_test.cpp
     userinterface_test.cpp
