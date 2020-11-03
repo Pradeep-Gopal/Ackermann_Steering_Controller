@@ -19,9 +19,6 @@ void Analysis::converge() const{
 
     cont.setTargets(ui.getTargetSpeed(),ui.getTargetHeading());
 
-    double throttle;
-    double steering_angle;
-
     double robot_time = 0;
     double dt = cont.getDt();
 
@@ -33,19 +30,17 @@ void Analysis::converge() const{
         if (std::abs(std::get<0>(errors)) <= speed_thresh && std::abs(std::get<1>(errors)) <= heading_thresh)
             break;
 
-        throttle = cont.computeThrottle();
-        steering_angle = cont.computeSteering();
+        double throttle = cont.computeThrottle();
+        double steering_angle = cont.computeSteering();
 
         robot.drive(throttle,steering_angle,cont.getDt());
 
         robot_time += dt;
-
-        std::cout << "Throttle: " << throttle << std::endl;
-        std::cout << "Steering Angle: " << steering_angle << std::endl;
+        
         viz.show(robot.getSpeed(),robot.getHeading(), robot_time, ui);
 
-//        if (robot_time > 40)
-//            break;
+        if (robot_time >= 40)
+            break;
     }
 	
 }

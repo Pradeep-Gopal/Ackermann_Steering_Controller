@@ -1,0 +1,1 @@
+command: cpplint $( find . -name \.hpp -or -name \.cpp | grep -vE -e "^./build/" -e "^./vendor/" -e "^./docs/" -e "^./results" )

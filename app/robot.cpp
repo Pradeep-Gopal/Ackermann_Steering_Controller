@@ -37,7 +37,7 @@ std::vector<double> Robot::drive(double throttle,double steering_angle, double t
             right_wheel_velocity += throttle;
             delta_theta = (wheel_radius * right_wheel_velocity * t) / (R1 + (wheel_track / 2));
             left_wheel_velocity = (delta_theta * (R1 - (wheel_track / 2))) / (wheel_radius * t);
-            new_speed = (R * delta_theta) / t;
+            new_speed = std::abs((R * delta_theta) / t);
             break;
         case 'R':
 //            std::cout << "Turning right" << std::endl;
@@ -48,7 +48,7 @@ std::vector<double> Robot::drive(double throttle,double steering_angle, double t
             left_wheel_velocity += throttle;
             delta_theta = -(wheel_radius * left_wheel_velocity * t) / (R1 + (wheel_track / 2));
             right_wheel_velocity = (delta_theta * (R1 - (wheel_track / 2))) / (wheel_radius * t);
-            new_speed = (R * delta_theta) / t;
+            new_speed = std::abs((R * delta_theta) / t);
             break;
         case 'S':
 //            std::cout << "Going straight" << std::endl;
