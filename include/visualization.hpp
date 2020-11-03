@@ -1,3 +1,5 @@
+// Copyright (c) 2020 Govind Ajith Kumar, Justin Albrecht, Pradeep Gopal
+
 #pragma once
 #include <userinterface.hpp>
 
@@ -6,8 +8,6 @@
  * 				to the set goal
  */
 class Visualization{
-public:
-	// Visualization(){};
-	static void show(double,double,double,UserInterface&);
+ public:
+    static void show(double, double, double, UserInterface&);
 };
-

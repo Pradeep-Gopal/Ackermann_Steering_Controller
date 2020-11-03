@@ -1,5 +1,5 @@
+// Copyright (c) 2020 Govind Ajith Kumar, Justin Albrecht, Pradeep Gopal
 #include <controller.hpp>
-#include <iostream>
 /**
  * @brief User Defined Constructor
  *
@@ -16,7 +16,7 @@ Controller::Controller(Robot &robot) {
  * @param[in]  th    The target heading
  *
  */
-void Controller::setTargets(double ts,double th){
+void Controller::setTargets(double ts, double th) {
     target_speed = ts;
     target_heading = th;
 }
@@ -29,11 +29,11 @@ void Controller::setTargets(double ts,double th){
  *
  * @return     The steering
  */
-double Controller::computeSteering(){
+double Controller::computeSteering() {
     double p_gain = k_p_theta * heading_error.end()[-1];
 
     double sum = 0;
-    for (auto err: heading_error) {
+    for (auto err : heading_error) {
         sum += err * dt;
     }
     double i_gain = k_i_theta * sum;
@@ -42,13 +42,14 @@ double Controller::computeSteering(){
     if (heading_error.size() < 2)
         d_gain = 0;
     else
-        d_gain = k_d_theta * ((heading_error.end()[-1]-heading_error.end()[-2])/dt);
+        d_gain = k_d_theta * ((heading_error.end()[-1]-
+                heading_error.end()[-2])/dt);
 
     double gamma = p_gain+i_gain+d_gain;
 
     if (gamma > max_steering_angle) {
         gamma = max_steering_angle;
-    } else if (gamma < -max_steering_angle){
+    } else if (gamma < -max_steering_angle) {
         gamma = -max_steering_angle;
     }
 
@@ -63,10 +64,10 @@ double Controller::computeSteering(){
  *
  * @return     The throttle as a normalized value
  */
-double Controller::computeThrottle(){
+double Controller::computeThrottle() {
     double p_gain = k_p_s * speed_error.end()[-1];
     double sum = 0;
-    for (auto err: speed_error) {
+    for (auto err : speed_error) {
         sum += err * dt;
     }
     double i_gain = k_i_s * sum;
@@ -81,7 +82,7 @@ double Controller::computeThrottle(){
 
     if (throttle > max_throttle) {
         throttle = max_throttle;
-    } else if (throttle < -max_throttle){
+    } else if (throttle < -max_throttle) {
         throttle = -max_throttle;
     }
 
@@ -97,14 +98,15 @@ double Controller::computeThrottle(){
  *
  * @return     The error as a tuple 
  */
-std::tuple<double,double> Controller::computeError(double speed, double heading){
+std::tuple<double, double> Controller::computeError(double speed,
+                                                   double heading) {
     double cur_speed_error = target_speed - speed;
     double cur_heading_error = target_heading - heading;
 
     speed_error.push_back(cur_speed_error);
     heading_error.push_back(cur_heading_error);
 
-    return std::make_tuple(cur_speed_error,cur_heading_error);
+    return std::make_tuple(cur_speed_error, cur_heading_error);
 }
 
 double Controller::getDt() {

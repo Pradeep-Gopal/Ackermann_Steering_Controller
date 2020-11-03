@@ -1,4 +1,4 @@
-#include <iostream>
+// Copyright (c) 2020 Govind Ajith Kumar, Justin Albrecht, Pradeep Gopal
 #include "analysis.hpp"
 
 /**
@@ -6,8 +6,7 @@
  *
  * @return     0
  */
-int main()
-{
+int main() {
     Analysis sim;
     sim.converge();
     return 0;

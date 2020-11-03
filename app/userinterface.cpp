@@ -1,3 +1,5 @@
+// Copyright (c) 2020 Govind Ajith Kumar, Justin Albrecht, Pradeep Gopal
+
 #include <userinterface.hpp>
 #include <iostream>
 
@@ -17,7 +19,6 @@ void  UserInterface::getTargetsFromUser() {
     target_heading = (target_heading_deg*PI)/180;
     std::cout << "Enter the target speed (in m/s): ";
     std::cin >> target_speed;
-
 }
 
 /**
@@ -25,7 +26,7 @@ void  UserInterface::getTargetsFromUser() {
  *
  * @return     The target speed.
  */
-double UserInterface::getTargetSpeed() const{
+double UserInterface::getTargetSpeed() const {
     return target_speed;
 }
 
@@ -34,7 +35,7 @@ double UserInterface::getTargetSpeed() const{
  *
  * @return     The target heading.
  */
-double UserInterface::getTargetHeading() const{
+double UserInterface::getTargetHeading() const {
     return target_heading;
 }
 
