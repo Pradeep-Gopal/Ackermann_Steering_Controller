@@ -2,6 +2,7 @@
 #include <cmath> 
 #include <iostream>
 #include <gtest/gtest.h>
+#include <bits/stdc++.h>
 
 #define PI 3.14159265
 
@@ -12,9 +13,14 @@
  * @param[in]  steering_angle  The steering angle
  */
 std::vector<double> Robot::drive(double throttle,double steering_angle, double t){
-    double R = sqrt(pow(com_offset, 2) + (pow(wheel_base, 2) * pow((1 / tan(steering_angle)), 2)));
 
-    // std::cout  << "R: "<< R << std::endl;
+    double R = sqrt(pow(com_offset, 2) + (pow(wheel_base, 2) * pow((1 / tan(steering_angle)), 2)));
+    if (std::isinf(R))
+    {
+        R = 10000000000000;
+    }
+
+//     std::cout  << "R: "<< R << std::endl;
 
     double R1 = sqrt(pow(R, 2) - pow(com_offset, 2));
     double alpha_i = atan(wheel_base / (R1 - (wheel_track / 2)));
@@ -31,14 +37,14 @@ std::vector<double> Robot::drive(double throttle,double steering_angle, double t
 
     inner_wheel_velocity = (delta_theta * (R1 - (wheel_track / 2))) / (wheel_radius * t);
 
-    // std::cout << "inner_wheel_velocity: " << inner_wheel_velocity << std::endl;
-    // std::cout << "outer_wheel_velocity: " << outer_wheel_velocity << std::endl;
+//     std::cout << "inner_wheel_velocity: " << inner_wheel_velocity << std::endl;
+//     std::cout << "outer_wheel_velocity: " << outer_wheel_velocity << std::endl;
 
     speed = (R * delta_theta) / t;
     heading += delta_theta;
 
-    // std::cout << "robot_speed: " << robot_speed << std::endl;
-    // std::cout << "robot_heading: " << robot_heading << std::endl;
+//     std::cout << "robot_speed: " << speed << std::endl;
+//     std::cout << "robot_heading: " << heading << std::endl;
 
     return std::vector<double> {speed,heading,inner_wheel_velocity,outer_wheel_velocity};
 
