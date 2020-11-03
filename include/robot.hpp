@@ -40,7 +40,7 @@ public:
 	 */
 	double getHeading();
 
-	double getAlpha_Wheel_Max();
+	double getAlphaWheelMax();
 
 };
 

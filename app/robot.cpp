@@ -58,7 +58,7 @@ double Robot::getHeading(){
     return heading;
 }
 
-double Robot::getAlpha_Wheel_Max() {
+double Robot::getAlphaWheelMax() {
     return alpha_wheel_max;
 }
 

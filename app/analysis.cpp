@@ -22,6 +22,9 @@ void Analysis::converge(){
     double throttle;
     double steering_angle;
 
+    double robot_time = 0;
+    double dt = cont.getDt();
+
     std::tuple<double,double> errors;
     int flag_1 = 0;
     int flag_2 = 0;
@@ -53,9 +56,9 @@ void Analysis::converge(){
 //            break;
 //        }
 
+        robot_time += dt;
 
-
-    viz.show(robot.getSpeed(),robot.getHeading(), ui);
+        viz.show(robot.getSpeed(),robot.getHeading(), robot_time, ui);
     }
 	
 }

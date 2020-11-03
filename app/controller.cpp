@@ -6,7 +6,7 @@
  * @param robot
  */
 Controller::Controller(Robot &robot) {
-    max_throttle = robot.getAlpha_Wheel_Max()*dt;
+    max_throttle = robot.getAlphaWheelMax()*dt;
 }
 
 /**

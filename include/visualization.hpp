@@ -8,6 +8,6 @@
 class Visualization{
 public:
 	// Visualization(){};
-	void show(double,double, UserInterface&);
+	void show(double,double,double,UserInterface&);
 };
 
