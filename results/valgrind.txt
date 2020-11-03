@@ -1,0 +1,770 @@
+command: valgrind --leak-check=full ./app/shell-app > ../results/valgrind.txt 2>&1
+Ran with input 5,5
+
+results:
+==11922== Memcheck, a memory error detector
+==11922== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==11922== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==11922== Command: ./app/shell-app
+==11922== 
+Enter the target heading (in degrees): Enter the target speed (in m/s): Current Time: 0.1 (sec)
+Current Speed: 0.0743 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.00465 (deg) | Target Heading: 5 (deg)
+
+Current Time: 0.2 (sec)
+Current Speed: 0.126 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.0125 (deg) | Target Heading: 5 (deg)
+
+Current Time: 0.3 (sec)
+Current Speed: 0.183 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.02393 (deg) | Target Heading: 5 (deg)
+
+Current Time: 0.4 (sec)
+Current Speed: 0.238 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.03876 (deg) | Target Heading: 5 (deg)
+
+Current Time: 0.5 (sec)
+Current Speed: 0.293 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.05697 (deg) | Target Heading: 5 (deg)
+
+Current Time: 0.6 (sec)
+Current Speed: 0.348 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.07847 (deg) | Target Heading: 5 (deg)
+
+Current Time: 0.7 (sec)
+Current Speed: 0.402 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.1032 (deg) | Target Heading: 5 (deg)
+
+Current Time: 0.8 (sec)
+Current Speed: 0.455 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.1311 (deg) | Target Heading: 5 (deg)
+
+Current Time: 0.9 (sec)
+Current Speed: 0.508 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.162 (deg) | Target Heading: 5 (deg)
+
+Current Time: 1 (sec)
+Current Speed: 0.56 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.196 (deg) | Target Heading: 5 (deg)
+
+Current Time: 1.1 (sec)
+Current Speed: 0.612 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.2328 (deg) | Target Heading: 5 (deg)
+
+Current Time: 1.2 (sec)
+Current Speed: 0.664 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.2724 (deg) | Target Heading: 5 (deg)
+
+Current Time: 1.3 (sec)
+Current Speed: 0.715 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.3147 (deg) | Target Heading: 5 (deg)
+
+Current Time: 1.4 (sec)
+Current Speed: 0.765 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.3596 (deg) | Target Heading: 5 (deg)
+
+Current Time: 1.5 (sec)
+Current Speed: 0.815 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.4069 (deg) | Target Heading: 5 (deg)
+
+Current Time: 1.6 (sec)
+Current Speed: 0.865 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.4567 (deg) | Target Heading: 5 (deg)
+
+Current Time: 1.7 (sec)
+Current Speed: 0.914 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.5087 (deg) | Target Heading: 5 (deg)
+
+Current Time: 1.8 (sec)
+Current Speed: 0.962 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.5628 (deg) | Target Heading: 5 (deg)
+
+Current Time: 1.9 (sec)
+Current Speed: 1.01 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.619 (deg) | Target Heading: 5 (deg)
+
+Current Time: 2 (sec)
+Current Speed: 1.06 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.677 (deg) | Target Heading: 5 (deg)
+
+Current Time: 2.1 (sec)
+Current Speed: 1.11 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.7369 (deg) | Target Heading: 5 (deg)
+
+Current Time: 2.2 (sec)
+Current Speed: 1.15 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.7985 (deg) | Target Heading: 5 (deg)
+
+Current Time: 2.3 (sec)
+Current Speed: 1.2 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.8616 (deg) | Target Heading: 5 (deg)
+
+Current Time: 2.4 (sec)
+Current Speed: 1.24 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.9262 (deg) | Target Heading: 5 (deg)
+
+Current Time: 2.5 (sec)
+Current Speed: 1.29 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 0.9921 (deg) | Target Heading: 5 (deg)
+
+Current Time: 2.6 (sec)
+Current Speed: 1.34 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 1.059 (deg) | Target Heading: 5 (deg)
+
+Current Time: 2.7 (sec)
+Current Speed: 1.38 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 1.127 (deg) | Target Heading: 5 (deg)
+
+Current Time: 2.8 (sec)
+Current Speed: 1.42 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 1.197 (deg) | Target Heading: 5 (deg)
+
+Current Time: 2.9 (sec)
+Current Speed: 1.47 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 1.267 (deg) | Target Heading: 5 (deg)
+
+Current Time: 3 (sec)
+Current Speed: 1.51 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 1.338 (deg) | Target Heading: 5 (deg)
+
+Current Time: 3.1 (sec)
+Current Speed: 1.56 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 1.409 (deg) | Target Heading: 5 (deg)
+
+Current Time: 3.2 (sec)
+Current Speed: 1.6 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 1.481 (deg) | Target Heading: 5 (deg)
+
+Current Time: 3.3 (sec)
+Current Speed: 1.64 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 1.554 (deg) | Target Heading: 5 (deg)
+
+Current Time: 3.4 (sec)
+Current Speed: 1.68 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 1.626 (deg) | Target Heading: 5 (deg)
+
+Current Time: 3.5 (sec)
+Current Speed: 1.72 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 1.699 (deg) | Target Heading: 5 (deg)
+
+Current Time: 3.6 (sec)
+Current Speed: 1.76 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 1.773 (deg) | Target Heading: 5 (deg)
+
+Current Time: 3.7 (sec)
+Current Speed: 1.81 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 1.846 (deg) | Target Heading: 5 (deg)
+
+Current Time: 3.8 (sec)
+Current Speed: 1.85 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 1.919 (deg) | Target Heading: 5 (deg)
+
+Current Time: 3.9 (sec)
+Current Speed: 1.89 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 1.992 (deg) | Target Heading: 5 (deg)
+
+Current Time: 4 (sec)
+Current Speed: 1.92 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 2.065 (deg) | Target Heading: 5 (deg)
+
+Current Time: 4.1 (sec)
+Current Speed: 1.96 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 2.137 (deg) | Target Heading: 5 (deg)
+
+Current Time: 4.2 (sec)
+Current Speed: 2 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 2.21 (deg) | Target Heading: 5 (deg)
+
+Current Time: 4.3 (sec)
+Current Speed: 2.04 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 2.281 (deg) | Target Heading: 5 (deg)
+
+Current Time: 4.4 (sec)
+Current Speed: 2.08 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 2.353 (deg) | Target Heading: 5 (deg)
+
+Current Time: 4.5 (sec)
+Current Speed: 2.12 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 2.423 (deg) | Target Heading: 5 (deg)
+
+Current Time: 4.6 (sec)
+Current Speed: 2.15 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 2.493 (deg) | Target Heading: 5 (deg)
+
+Current Time: 4.7 (sec)
+Current Speed: 2.19 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 2.563 (deg) | Target Heading: 5 (deg)
+
+Current Time: 4.8 (sec)
+Current Speed: 2.23 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 2.631 (deg) | Target Heading: 5 (deg)
+
+Current Time: 4.9 (sec)
+Current Speed: 2.26 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 2.699 (deg) | Target Heading: 5 (deg)
+
+Current Time: 5 (sec)
+Current Speed: 2.3 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 2.766 (deg) | Target Heading: 5 (deg)
+
+Current Time: 5.1 (sec)
+Current Speed: 2.34 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 2.832 (deg) | Target Heading: 5 (deg)
+
+Current Time: 5.2 (sec)
+Current Speed: 2.37 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 2.897 (deg) | Target Heading: 5 (deg)
+
+Current Time: 5.3 (sec)
+Current Speed: 2.41 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 2.961 (deg) | Target Heading: 5 (deg)
+
+Current Time: 5.4 (sec)
+Current Speed: 2.44 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 3.024 (deg) | Target Heading: 5 (deg)
+
+Current Time: 5.5 (sec)
+Current Speed: 2.48 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 3.086 (deg) | Target Heading: 5 (deg)
+
+Current Time: 5.6 (sec)
+Current Speed: 2.51 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 3.147 (deg) | Target Heading: 5 (deg)
+
+Current Time: 5.7 (sec)
+Current Speed: 2.54 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 3.207 (deg) | Target Heading: 5 (deg)
+
+Current Time: 5.8 (sec)
+Current Speed: 2.58 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 3.266 (deg) | Target Heading: 5 (deg)
+
+Current Time: 5.9 (sec)
+Current Speed: 2.61 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 3.323 (deg) | Target Heading: 5 (deg)
+
+Current Time: 6 (sec)
+Current Speed: 2.64 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 3.38 (deg) | Target Heading: 5 (deg)
+
+Current Time: 6.1 (sec)
+Current Speed: 2.67 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 3.435 (deg) | Target Heading: 5 (deg)
+
+Current Time: 6.2 (sec)
+Current Speed: 2.71 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 3.489 (deg) | Target Heading: 5 (deg)
+
+Current Time: 6.3 (sec)
+Current Speed: 2.74 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 3.542 (deg) | Target Heading: 5 (deg)
+
+Current Time: 6.4 (sec)
+Current Speed: 2.77 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 3.593 (deg) | Target Heading: 5 (deg)
+
+Current Time: 6.5 (sec)
+Current Speed: 2.8 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 3.644 (deg) | Target Heading: 5 (deg)
+
+Current Time: 6.6 (sec)
+Current Speed: 2.83 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 3.693 (deg) | Target Heading: 5 (deg)
+
+Current Time: 6.7 (sec)
+Current Speed: 2.86 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 3.741 (deg) | Target Heading: 5 (deg)
+
+Current Time: 6.8 (sec)
+Current Speed: 2.89 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 3.788 (deg) | Target Heading: 5 (deg)
+
+Current Time: 6.9 (sec)
+Current Speed: 2.92 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 3.833 (deg) | Target Heading: 5 (deg)
+
+Current Time: 7 (sec)
+Current Speed: 2.95 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 3.878 (deg) | Target Heading: 5 (deg)
+
+Current Time: 7.1 (sec)
+Current Speed: 2.98 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 3.921 (deg) | Target Heading: 5 (deg)
+
+Current Time: 7.2 (sec)
+Current Speed: 3.01 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 3.963 (deg) | Target Heading: 5 (deg)
+
+Current Time: 7.3 (sec)
+Current Speed: 3.04 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.004 (deg) | Target Heading: 5 (deg)
+
+Current Time: 7.4 (sec)
+Current Speed: 3.07 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.043 (deg) | Target Heading: 5 (deg)
+
+Current Time: 7.5 (sec)
+Current Speed: 3.09 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.082 (deg) | Target Heading: 5 (deg)
+
+Current Time: 7.6 (sec)
+Current Speed: 3.12 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.119 (deg) | Target Heading: 5 (deg)
+
+Current Time: 7.7 (sec)
+Current Speed: 3.15 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.156 (deg) | Target Heading: 5 (deg)
+
+Current Time: 7.8 (sec)
+Current Speed: 3.18 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.191 (deg) | Target Heading: 5 (deg)
+
+Current Time: 7.9 (sec)
+Current Speed: 3.2 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.225 (deg) | Target Heading: 5 (deg)
+
+Current Time: 8 (sec)
+Current Speed: 3.23 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.258 (deg) | Target Heading: 5 (deg)
+
+Current Time: 8.1 (sec)
+Current Speed: 3.26 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.29 (deg) | Target Heading: 5 (deg)
+
+Current Time: 8.2 (sec)
+Current Speed: 3.28 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.32 (deg) | Target Heading: 5 (deg)
+
+Current Time: 8.3 (sec)
+Current Speed: 3.31 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.35 (deg) | Target Heading: 5 (deg)
+
+Current Time: 8.4 (sec)
+Current Speed: 3.33 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.379 (deg) | Target Heading: 5 (deg)
+
+Current Time: 8.5 (sec)
+Current Speed: 3.36 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.407 (deg) | Target Heading: 5 (deg)
+
+Current Time: 8.6 (sec)
+Current Speed: 3.38 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.434 (deg) | Target Heading: 5 (deg)
+
+Current Time: 8.7 (sec)
+Current Speed: 3.41 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.46 (deg) | Target Heading: 5 (deg)
+
+Current Time: 8.8 (sec)
+Current Speed: 3.43 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.485 (deg) | Target Heading: 5 (deg)
+
+Current Time: 8.9 (sec)
+Current Speed: 3.46 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.509 (deg) | Target Heading: 5 (deg)
+
+Current Time: 9 (sec)
+Current Speed: 3.48 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.532 (deg) | Target Heading: 5 (deg)
+
+Current Time: 9.1 (sec)
+Current Speed: 3.51 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.555 (deg) | Target Heading: 5 (deg)
+
+Current Time: 9.2 (sec)
+Current Speed: 3.53 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.576 (deg) | Target Heading: 5 (deg)
+
+Current Time: 9.3 (sec)
+Current Speed: 3.55 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.597 (deg) | Target Heading: 5 (deg)
+
+Current Time: 9.4 (sec)
+Current Speed: 3.58 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.617 (deg) | Target Heading: 5 (deg)
+
+Current Time: 9.5 (sec)
+Current Speed: 3.6 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.636 (deg) | Target Heading: 5 (deg)
+
+Current Time: 9.6 (sec)
+Current Speed: 3.62 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.655 (deg) | Target Heading: 5 (deg)
+
+Current Time: 9.7 (sec)
+Current Speed: 3.64 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.673 (deg) | Target Heading: 5 (deg)
+
+Current Time: 9.8 (sec)
+Current Speed: 3.67 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.69 (deg) | Target Heading: 5 (deg)
+
+Current Time: 9.9 (sec)
+Current Speed: 3.69 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.706 (deg) | Target Heading: 5 (deg)
+
+Current Time: 10 (sec)
+Current Speed: 3.71 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.722 (deg) | Target Heading: 5 (deg)
+
+Current Time: 10.1 (sec)
+Current Speed: 3.73 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.737 (deg) | Target Heading: 5 (deg)
+
+Current Time: 10.2 (sec)
+Current Speed: 3.75 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.752 (deg) | Target Heading: 5 (deg)
+
+Current Time: 10.3 (sec)
+Current Speed: 3.77 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.766 (deg) | Target Heading: 5 (deg)
+
+Current Time: 10.4 (sec)
+Current Speed: 3.8 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.779 (deg) | Target Heading: 5 (deg)
+
+Current Time: 10.5 (sec)
+Current Speed: 3.82 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.792 (deg) | Target Heading: 5 (deg)
+
+Current Time: 10.6 (sec)
+Current Speed: 3.84 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.804 (deg) | Target Heading: 5 (deg)
+
+Current Time: 10.7 (sec)
+Current Speed: 3.86 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.816 (deg) | Target Heading: 5 (deg)
+
+Current Time: 10.8 (sec)
+Current Speed: 3.88 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.827 (deg) | Target Heading: 5 (deg)
+
+Current Time: 10.9 (sec)
+Current Speed: 3.9 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.838 (deg) | Target Heading: 5 (deg)
+
+Current Time: 11 (sec)
+Current Speed: 3.92 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.848 (deg) | Target Heading: 5 (deg)
+
+Current Time: 11.1 (sec)
+Current Speed: 3.94 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.858 (deg) | Target Heading: 5 (deg)
+
+Current Time: 11.2 (sec)
+Current Speed: 3.96 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.867 (deg) | Target Heading: 5 (deg)
+
+Current Time: 11.3 (sec)
+Current Speed: 3.97 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.876 (deg) | Target Heading: 5 (deg)
+
+Current Time: 11.4 (sec)
+Current Speed: 3.99 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.885 (deg) | Target Heading: 5 (deg)
+
+Current Time: 11.5 (sec)
+Current Speed: 4.01 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.893 (deg) | Target Heading: 5 (deg)
+
+Current Time: 11.6 (sec)
+Current Speed: 4.03 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.901 (deg) | Target Heading: 5 (deg)
+
+Current Time: 11.7 (sec)
+Current Speed: 4.05 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.908 (deg) | Target Heading: 5 (deg)
+
+Current Time: 11.8 (sec)
+Current Speed: 4.07 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.916 (deg) | Target Heading: 5 (deg)
+
+Current Time: 11.9 (sec)
+Current Speed: 4.08 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.922 (deg) | Target Heading: 5 (deg)
+
+Current Time: 12 (sec)
+Current Speed: 4.1 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.929 (deg) | Target Heading: 5 (deg)
+
+Current Time: 12.1 (sec)
+Current Speed: 4.12 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.935 (deg) | Target Heading: 5 (deg)
+
+Current Time: 12.2 (sec)
+Current Speed: 4.14 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.941 (deg) | Target Heading: 5 (deg)
+
+Current Time: 12.3 (sec)
+Current Speed: 4.15 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.947 (deg) | Target Heading: 5 (deg)
+
+Current Time: 12.4 (sec)
+Current Speed: 4.17 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.952 (deg) | Target Heading: 5 (deg)
+
+Current Time: 12.5 (sec)
+Current Speed: 4.19 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.957 (deg) | Target Heading: 5 (deg)
+
+Current Time: 12.6 (sec)
+Current Speed: 4.2 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.962 (deg) | Target Heading: 5 (deg)
+
+Current Time: 12.7 (sec)
+Current Speed: 4.22 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.966 (deg) | Target Heading: 5 (deg)
+
+Current Time: 12.8 (sec)
+Current Speed: 4.24 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.971 (deg) | Target Heading: 5 (deg)
+
+Current Time: 12.9 (sec)
+Current Speed: 4.25 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.975 (deg) | Target Heading: 5 (deg)
+
+Current Time: 13 (sec)
+Current Speed: 4.27 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.979 (deg) | Target Heading: 5 (deg)
+
+Current Time: 13.1 (sec)
+Current Speed: 4.28 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.983 (deg) | Target Heading: 5 (deg)
+
+Current Time: 13.2 (sec)
+Current Speed: 4.3 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.986 (deg) | Target Heading: 5 (deg)
+
+Current Time: 13.3 (sec)
+Current Speed: 4.32 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.99 (deg) | Target Heading: 5 (deg)
+
+Current Time: 13.4 (sec)
+Current Speed: 4.33 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.993 (deg) | Target Heading: 5 (deg)
+
+Current Time: 13.5 (sec)
+Current Speed: 4.35 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.996 (deg) | Target Heading: 5 (deg)
+
+Current Time: 13.6 (sec)
+Current Speed: 4.36 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 4.999 (deg) | Target Heading: 5 (deg)
+
+Current Time: 13.7 (sec)
+Current Speed: 4.38 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.002 (deg) | Target Heading: 5 (deg)
+
+Current Time: 13.8 (sec)
+Current Speed: 4.39 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.004 (deg) | Target Heading: 5 (deg)
+
+Current Time: 13.9 (sec)
+Current Speed: 4.4 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.007 (deg) | Target Heading: 5 (deg)
+
+Current Time: 14 (sec)
+Current Speed: 4.42 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.009 (deg) | Target Heading: 5 (deg)
+
+Current Time: 14.1 (sec)
+Current Speed: 4.43 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.012 (deg) | Target Heading: 5 (deg)
+
+Current Time: 14.2 (sec)
+Current Speed: 4.45 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.014 (deg) | Target Heading: 5 (deg)
+
+Current Time: 14.3 (sec)
+Current Speed: 4.46 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.016 (deg) | Target Heading: 5 (deg)
+
+Current Time: 14.4 (sec)
+Current Speed: 4.47 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.018 (deg) | Target Heading: 5 (deg)
+
+Current Time: 14.5 (sec)
+Current Speed: 4.49 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.019 (deg) | Target Heading: 5 (deg)
+
+Current Time: 14.6 (sec)
+Current Speed: 4.5 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.021 (deg) | Target Heading: 5 (deg)
+
+Current Time: 14.7 (sec)
+Current Speed: 4.52 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.023 (deg) | Target Heading: 5 (deg)
+
+Current Time: 14.8 (sec)
+Current Speed: 4.53 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.024 (deg) | Target Heading: 5 (deg)
+
+Current Time: 14.9 (sec)
+Current Speed: 4.54 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.026 (deg) | Target Heading: 5 (deg)
+
+Current Time: 15 (sec)
+Current Speed: 4.55 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.027 (deg) | Target Heading: 5 (deg)
+
+Current Time: 15.1 (sec)
+Current Speed: 4.57 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.028 (deg) | Target Heading: 5 (deg)
+
+Current Time: 15.2 (sec)
+Current Speed: 4.58 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.03 (deg) | Target Heading: 5 (deg)
+
+Current Time: 15.3 (sec)
+Current Speed: 4.59 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.031 (deg) | Target Heading: 5 (deg)
+
+Current Time: 15.4 (sec)
+Current Speed: 4.6 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.032 (deg) | Target Heading: 5 (deg)
+
+Current Time: 15.5 (sec)
+Current Speed: 4.62 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.033 (deg) | Target Heading: 5 (deg)
+
+Current Time: 15.6 (sec)
+Current Speed: 4.63 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.034 (deg) | Target Heading: 5 (deg)
+
+Current Time: 15.7 (sec)
+Current Speed: 4.64 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.035 (deg) | Target Heading: 5 (deg)
+
+Current Time: 15.8 (sec)
+Current Speed: 4.65 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.036 (deg) | Target Heading: 5 (deg)
+
+Current Time: 15.9 (sec)
+Current Speed: 4.66 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.037 (deg) | Target Heading: 5 (deg)
+
+Current Time: 16 (sec)
+Current Speed: 4.68 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.037 (deg) | Target Heading: 5 (deg)
+
+Current Time: 16.1 (sec)
+Current Speed: 4.69 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.038 (deg) | Target Heading: 5 (deg)
+
+Current Time: 16.2 (sec)
+Current Speed: 4.7 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.039 (deg) | Target Heading: 5 (deg)
+
+Current Time: 16.3 (sec)
+Current Speed: 4.71 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.04 (deg) | Target Heading: 5 (deg)
+
+Current Time: 16.4 (sec)
+Current Speed: 4.72 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.04 (deg) | Target Heading: 5 (deg)
+
+Current Time: 16.5 (sec)
+Current Speed: 4.73 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.041 (deg) | Target Heading: 5 (deg)
+
+Current Time: 16.6 (sec)
+Current Speed: 4.74 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.041 (deg) | Target Heading: 5 (deg)
+
+Current Time: 16.7 (sec)
+Current Speed: 4.75 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.042 (deg) | Target Heading: 5 (deg)
+
+Current Time: 16.8 (sec)
+Current Speed: 4.76 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.042 (deg) | Target Heading: 5 (deg)
+
+Current Time: 16.9 (sec)
+Current Speed: 4.77 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.043 (deg) | Target Heading: 5 (deg)
+
+Current Time: 17 (sec)
+Current Speed: 4.78 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.043 (deg) | Target Heading: 5 (deg)
+
+Current Time: 17.1 (sec)
+Current Speed: 4.79 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.044 (deg) | Target Heading: 5 (deg)
+
+Current Time: 17.2 (sec)
+Current Speed: 4.8 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.044 (deg) | Target Heading: 5 (deg)
+
+Current Time: 17.3 (sec)
+Current Speed: 4.81 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.044 (deg) | Target Heading: 5 (deg)
+
+Current Time: 17.4 (sec)
+Current Speed: 4.82 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.045 (deg) | Target Heading: 5 (deg)
+
+Current Time: 17.5 (sec)
+Current Speed: 4.83 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.045 (deg) | Target Heading: 5 (deg)
+
+Current Time: 17.6 (sec)
+Current Speed: 4.84 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.045 (deg) | Target Heading: 5 (deg)
+
+Current Time: 17.7 (sec)
+Current Speed: 4.85 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.046 (deg) | Target Heading: 5 (deg)
+
+Current Time: 17.8 (sec)
+Current Speed: 4.86 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.046 (deg) | Target Heading: 5 (deg)
+
+Current Time: 17.9 (sec)
+Current Speed: 4.87 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.046 (deg) | Target Heading: 5 (deg)
+
+Current Time: 18 (sec)
+Current Speed: 4.88 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.046 (deg) | Target Heading: 5 (deg)
+
+Current Time: 18.1 (sec)
+Current Speed: 4.89 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.047 (deg) | Target Heading: 5 (deg)
+
+Current Time: 18.2 (sec)
+Current Speed: 4.9 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.047 (deg) | Target Heading: 5 (deg)
+
+Current Time: 18.3 (sec)
+Current Speed: 4.91 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.047 (deg) | Target Heading: 5 (deg)
+
+Current Time: 18.4 (sec)
+Current Speed: 4.92 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.047 (deg) | Target Heading: 5 (deg)
+
+Current Time: 18.5 (sec)
+Current Speed: 4.93 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.047 (deg) | Target Heading: 5 (deg)
+
+Current Time: 18.6 (sec)
+Current Speed: 4.93 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.048 (deg) | Target Heading: 5 (deg)
+
+Current Time: 18.7 (sec)
+Current Speed: 4.94 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.048 (deg) | Target Heading: 5 (deg)
+
+Current Time: 18.8 (sec)
+Current Speed: 4.95 (m/s) | Target Speed: 5 (m/s)
+Current Heading: 5.048 (deg) | Target Heading: 5 (deg)
+
+==11922== 
+==11922== HEAP SUMMARY:
+==11922==     in use at exit: 0 bytes in 0 blocks
+==11922==   total heap usage: 211 allocs, 211 frees, 92,130 bytes allocated
+==11922== 
+==11922== All heap blocks were freed -- no leaks are possible
+==11922== 
+==11922== For counts of detected and suppressed errors, rerun with: -v
+==11922== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
