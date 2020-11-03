@@ -6,15 +6,17 @@
  */
 class Robot{
 private:
-	double wheel_base = 2;//wheel base of the vehicle
-	double wheel_track = 3;//wheel track of the vehicle
+	double wheel_base = 4;//wheel base of the vehicle
+	double wheel_track = 2;//wheel track of the vehicle
 	double wheel_radius= .3;//the wheel radius on all the 4 corners
 	double heading = 0;//direction in which the robot is heading
 	double speed = 0;//the speed of the robot
-	double inner_wheel_velocity = 0;//inner wheel's velocity
-	double outer_wheel_velocity = 0;//outer wheel's velocity
+	double left_wheel_velocity = 0;//inner wheel's velocity
+	double right_wheel_velocity = 0;//outer wheel's velocity
+	double left_wheel_angle = 0;
+	double right_wheel_angle = 0;
 	double com_offset = 1;//Complete offset
-	double alpha_wheel_max = 8; //Maximum acceleration of the wheel in rad/s^2
+	double alpha_wheel_max = 20; //Maximum acceleration of the wheel in rad/s^2
 public:
 	// Robot(){};
 	/**
@@ -31,16 +33,21 @@ public:
 	 *
 	 * @return     The robot speed.
 	 */
-	double getSpeed();
+	double getSpeed() const;
 
 	/**
 	 * @brief      Gets the robot heading.
 	 *
 	 * @return     The robot heading.
 	 */
-	double getHeading();
+	double getHeading() const;
 
-	double getAlphaWheelMax();
+	/**
+	 * @brief      Gets the max angular acceleration of the wheel.
+	 *
+	 * @return     The max angular acceleration of the wheel.
+	 */
+	double getAlphaWheelMax() const;
 
 };
 

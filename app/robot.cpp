@@ -1,8 +1,6 @@
 #include <robot.hpp>
-#include <cmath> 
+#include <cmath>
 #include <iostream>
-#include <gtest/gtest.h>
-#include <bits/stdc++.h>
 
 #define PI 3.14159265
 
@@ -13,52 +11,76 @@
  * @param[in]  steering_angle  The steering angle
  */
 std::vector<double> Robot::drive(double throttle,double steering_angle, double t){
+    char turn;
+    double R;
+    double R1;
+    double delta_theta = 0;
+    double new_speed = 0;
 
-    double R = sqrt(pow(com_offset, 2) + (pow(wheel_base, 2) * pow((1 / tan(steering_angle)), 2)));
-    if (std::isinf(R))
-    {
-        R = 10000000000000;
+    if (steering_angle > 0)
+        turn = 'L'; // Left turn
+    else if (steering_angle < 0)
+        turn = 'R'; // Right turn
+    else
+        turn = 'S'; // Straight turn
+
+    switch (turn) {
+        default:
+            std::cout << "Not a valid steering angle" << std::endl;
+
+        case 'L':
+            std::cout << "Turning left" << std::endl;
+            R = sqrt(pow(com_offset, 2) + (pow(wheel_base, 2) * pow((1 / tan(steering_angle)), 2)));
+            R1 = sqrt(pow(R, 2) - pow(com_offset, 2));
+            left_wheel_angle = atan(wheel_base / (R1 - (wheel_track / 2)));
+            right_wheel_angle = atan(wheel_base / (R1 + (wheel_track / 2)));
+            right_wheel_velocity += throttle;
+            delta_theta = (wheel_radius * right_wheel_velocity * t) / (R1 + (wheel_track / 2));
+            left_wheel_velocity = (delta_theta * (R1 - (wheel_track / 2))) / (wheel_radius * t);
+            new_speed = (R * delta_theta) / t;
+            break;
+        case 'R':
+            std::cout << "Turning right" << std::endl;
+            R = sqrt(pow(com_offset, 2) + (pow(wheel_base, 2) * pow((1 / tan(-steering_angle)), 2)));
+            R1 = sqrt(pow(R, 2) - pow(com_offset, 2));
+            right_wheel_angle = atan(wheel_base / (R1 - (wheel_track / 2)));
+            left_wheel_angle = atan(wheel_base / (R1 + (wheel_track / 2)));
+            left_wheel_velocity += throttle;
+            delta_theta = -(wheel_radius * left_wheel_velocity * t) / (R1 + (wheel_track / 2));
+            right_wheel_velocity = (delta_theta * (R1 - (wheel_track / 2))) / (wheel_radius * t);
+            new_speed = (R * delta_theta) / t;
+            break;
+        case 'S':
+            std::cout << "Going straight" << std::endl;
+            right_wheel_angle = 0;
+            left_wheel_angle = 0;
+            if (left_wheel_velocity>=right_wheel_velocity){
+                left_wheel_velocity += throttle;
+                right_wheel_velocity = left_wheel_velocity;
+            }
+            else{
+                right_wheel_velocity += throttle;
+                left_wheel_velocity = right_wheel_velocity;
+            }
+            new_speed = right_wheel_velocity*wheel_radius;
+            break;
+
     }
-
-//     std::cout  << "R: "<< R << std::endl;
-
-    double R1 = sqrt(pow(R, 2) - pow(com_offset, 2));
-    double alpha_i = atan(wheel_base / (R1 - (wheel_track / 2)));
-    double alpha_o = atan(wheel_base / (R1 + (wheel_track / 2)));
-
-    // std::cout << "alpha_i: " << (alpha_i*180)/PI << std::endl;
-    // std::cout << "alpha_o: " << (alpha_o*180)/PI << std::endl;
-
-    double delta_w = throttle;
-
-    outer_wheel_velocity += delta_w;
-
-    double delta_theta = (wheel_radius * outer_wheel_velocity * t) / (R1 + (wheel_track / 2));
-
-    inner_wheel_velocity = (delta_theta * (R1 - (wheel_track / 2))) / (wheel_radius * t);
-
-//     std::cout << "inner_wheel_velocity: " << inner_wheel_velocity << std::endl;
-//     std::cout << "outer_wheel_velocity: " << outer_wheel_velocity << std::endl;
-
-    speed = (R * delta_theta) / t;
     heading += delta_theta;
-
-//     std::cout << "robot_speed: " << speed << std::endl;
-//     std::cout << "robot_heading: " << heading << std::endl;
-
-    return std::vector<double> {speed,heading,inner_wheel_velocity,outer_wheel_velocity};
+    speed = new_speed;
+    return std::vector<double> {speed,heading,left_wheel_velocity,right_wheel_velocity};
 
 }
 
-double Robot::getSpeed(){
+double Robot::getSpeed() const{
     return speed;
 }
 
-double Robot::getHeading(){
+double Robot::getHeading() const{
     return heading;
 }
 
-double Robot::getAlphaWheelMax() {
+double Robot::getAlphaWheelMax() const {
     return alpha_wheel_max;
 }
 

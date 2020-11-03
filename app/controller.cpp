@@ -30,14 +30,19 @@ void Controller::setTargets(double ts,double th){
  * @return     The steering
  */
 double Controller::computeSteering(){
-    double p_gain = k_p_theta * heading_error[-1];
+    double p_gain = k_p_theta * heading_error.end()[-1];
+
     double sum = 0;
     for (auto err: heading_error) {
         sum += err * dt;
     }
     double i_gain = k_i_theta * sum;
 
-    double d_gain = k_d_theta * ((heading_error[-1]-heading_error[-2])/dt);
+    double d_gain;
+    if (heading_error.size() < 2)
+        d_gain = 0;
+    else
+        d_gain = k_d_theta * ((heading_error.end()[-1]-heading_error.end()[-2])/dt);
 
     double gamma = p_gain+i_gain+d_gain;
 
@@ -59,14 +64,18 @@ double Controller::computeSteering(){
  * @return     The throttle as a normalized value
  */
 double Controller::computeThrottle(){
-    double p_gain = k_p_theta * speed_error[-1];
+    double p_gain = k_p_s * speed_error.end()[-1];
     double sum = 0;
     for (auto err: speed_error) {
         sum += err * dt;
     }
-    double i_gain = k_i_theta * sum;
+    double i_gain = k_i_s * sum;
 
-    double d_gain = k_d_theta * ((speed_error[-1]-speed_error[-2])/dt);
+    double d_gain;
+    if (speed_error.size() < 2)
+        d_gain = 0;
+    else
+        d_gain = k_d_s * ((speed_error.end()[-1]-speed_error.end()[-2])/dt);
 
     double throttle = p_gain+i_gain+d_gain;
 
