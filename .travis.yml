@@ -15,10 +15,10 @@ matrix:
             - ubuntu-toolchain-r-test
             - george-edison55-precise-backports
           packages:
-            - g++-5
+            - g++-7
             - cmake
             - cmake-data
-      env: COMPILER=g++-5
+      env: COMPILER=g++-7
 
 before_install:
   - pip install --user cpp-coveralls
